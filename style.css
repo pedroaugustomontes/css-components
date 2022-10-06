@@ -18,16 +18,20 @@
   box-sizing: border-box;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 body {
   font-family: var(--ff-heading);
 
   background-color: var(--bg-primary);
   color: var(--fc-primary);
+}
+
+.container {
+  max-width: 33rem;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 header {
