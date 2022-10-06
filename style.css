@@ -6,6 +6,21 @@
   --bg-primary: hsl(var(--hue), 22%, 20%);
   --fc-primary: hsl(var(--hue), 0%, 100%);
   --fc-secondary: hsl(var(--hue), 50%, 80%);
+
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+  --fs-heading: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 body {
@@ -17,8 +32,25 @@ body {
 
 header {
   font-family: var(--ff-heading);
+  text-align: center;
+  margin: 10rem 0 8rem 0;
 }
 
 header p {
   color: var(--fc-secondary);
+
+  font-size: var(--fs-body);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 3.2rem;
+
+  margin-bottom: 1.7rem;
+}
+
+header h1 {
+  color: var(--fc-primary);
+
+  font-size: var(--fs-heading);
+  font-weight: 800;
+  line-height: 4.8rem;
 }
