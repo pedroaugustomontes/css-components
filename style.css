@@ -68,12 +68,13 @@ header h1 {
   object-fit: cover;
   max-width: 100%;
   border-radius: 6px;
-  /* opacity: 0.32; */
+  transition: all .2s ease;
 }
 
-/* .card img:hover {
-  opacity: 1;
-} */
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
 
 .card h2 {
   position: absolute;
