@@ -32,7 +32,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 700px) {
   :root {
     --fs-heading: 5.6rem;
   }
@@ -42,6 +42,12 @@ body {
     padding: 0 5rem;
   }
 
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 980px) {
   main {
     grid-template-areas: "A B B"
       "C C D";
@@ -63,7 +69,6 @@ body {
     grid-area: D;
   }
 }
-
 
 header {
   font-family: var(--ff-heading);
