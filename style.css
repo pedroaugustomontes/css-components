@@ -11,6 +11,7 @@
   font-size: 62.5%;
   --fs-body: 1.6rem;
   --fs-heading: 4rem;
+  --fs-main: 4rem;
 }
 
 * {
@@ -31,6 +32,38 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 980px) {
+  :root {
+    --fs-heading: 5.6rem;
+  }
+
+  .container {
+    max-width: 117rem;
+    padding: 0 5rem;
+  }
+
+  main {
+    grid-template-areas: "A B B"
+      "C C D";
+  }
+
+  main .card:nth-child(1) {
+    grid-area: A;
+  }
+
+  main .card:nth-child(2) {
+    grid-area: B;
+  }
+
+  main .card:nth-child(3) {
+    grid-area: C;
+  }
+
+  main .card:nth-child(4) {
+    grid-area: D;
+  }
+}
+
 
 header {
   font-family: var(--ff-heading);
@@ -40,33 +73,37 @@ header {
 
 header p {
   color: var(--fc-secondary);
-  
+
   font-size: var(--fs-body);
   letter-spacing: 3px;
   text-transform: uppercase;
   line-height: 3.2rem;
-  
+
   margin-bottom: 1.7rem;
 }
 
 header h1 {
   color: var(--fc-primary);
-  
+
   font-size: var(--fs-heading);
   font-weight: 800;
   line-height: 4.8rem;
 }
 
+main {
+  display: grid;
+  gap: 3.2rem;
+  padding-bottom: 10rem;
+}
+
 .card {
   position: relative;
-  font-family: var(--ff-heading);
-  margin-bottom: 3.2rem;
 }
 
 .card img {
   height: 41.6rem;
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   border-radius: 6px;
   transition: all .2s ease;
 }
@@ -82,10 +119,11 @@ header h1 {
   left: 2.8rem;
 
   color: var(--fc-primary);
-  font-size: var(--fs-heading);
+  font-size: var(--fs-main);
   font-weight: 800;
   letter-spacing: 3px;
   line-height: 3.2rem;
+  font-size: 4rem;
 
   display: flex;
   flex-direction: column;
@@ -119,7 +157,7 @@ header {
     opacity: 0;
     transform: translateY(-15px);
   }
-  
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -135,7 +173,7 @@ main {
     opacity: 0;
     transform: translateY(15px);
   }
-  
+
   100% {
     opacity: 1;
     transform: translateY(0);
