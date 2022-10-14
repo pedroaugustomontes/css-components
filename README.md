@@ -1,10 +1,3 @@
-<h1 align="center">
-    <a href="https://mrpmontes.github.io/css-components/">
-        <img alt="Logo que contém um link que leva até a página Componente Trabalhos" title="Logo que contém um link que leva até a página Componente Trabalhos" 
-        src="mobile-first.jpg" width="200px" />
-    </a>
-</h1>
-
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -20,7 +13,7 @@
 <br>
 
 <p align="center">
-  <img alt="Imagem da versão desktop do projeto" title="Imagem da versão desktop do projeto" src="desktop.jpg" width="50%" height="50%" />
+  <img alt="Gif mostrndo o projeto" title="Gif mostrando o projeto" src="css-components.gif" />
 </p>
 
 ## 🚀 Tecnologias
@@ -33,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O projeto foi desenvolvido para colocar em prática os conhecimentos adquiridos na parte de responsividade e variáveis do CSS.
-<br>
+<br><br>
 Essa é uma Landing Page que foi desenvolvida com os princípios de mobile-first e componentes reutilizáveis no css (desenvolvida primeiramente para mobile e depois responsividade ajustada para desktop).
 
 ## 🔖 Layout
